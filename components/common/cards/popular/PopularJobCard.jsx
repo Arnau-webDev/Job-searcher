@@ -1,11 +1,10 @@
-import React from 'react'
-import { View, Text, TouchableOpacity, Image } from 'react-native'
+import { View, Text, TouchableOpacity, Image } from 'react-native';
 
-import { checkImageURL } from '../../../../utils'
+import { checkImageURL } from '../../../../utils';
 
-import { placeholderLogo } from '../../../../constants'
+import { placeholderLogo } from '../../../../constants';
 
-import styles from './popularjobcard.style'
+import styles from './popularjobcard.style';
 
 const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
   return (
