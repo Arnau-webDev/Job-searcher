@@ -31,12 +31,12 @@ const Welcome = () => {
           <TextInput
             style={styles.searchInput}
             value={""}
-            onChange={() => { }}
+            onChange={() => (console.log('Hola'))}
             placeholder='What are you looking for?'
           />
         </View>
 
-        <TouchableOpacity style={styles.searchBtn} onPress={() => { }}>
+        <TouchableOpacity style={styles.searchBtn} onPress={() => (console.log('Hola2'))}>
           <Image
             source={icons.search}
             resizeMode='contain'

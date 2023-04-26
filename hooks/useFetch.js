@@ -3,13 +3,16 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const useFetch = (endpoint, query) => {
-    const [data, setData] = useState();
+    const [data, setData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
 
     useEffect(() => {
         fetchData();
-    }, [])
+    }, []);
+
+    console.log("query");
+    console.log(query);
 
 
     const options = {
